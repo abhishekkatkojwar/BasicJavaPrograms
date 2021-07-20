@@ -8,7 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 //Reporting.TestReportIndex("TC1","Login","Pass","10:00AM","11:00AM","TC1");
-//Reporting.TestReportDetail("TS1","Open Browser","Pass","C:\\Users\\abhishek_katkojwar\\Desktop\\image001.jpg","TC1");
 //Reporting.TestReportDetail("TS2","Close Browser","Pass","C:\\Users\\abhishek_katkojwar\\Desktop\\image001.jpg","TC1");
 
 public class Reporting {
