@@ -1,3 +1,7 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 
 public class forLoop {
 
@@ -13,7 +17,9 @@ public class forLoop {
 //				System.out.print(j+" ");
 //			System.out.println();
 //		}
-
+        String pattern = "dd/MM/yyyy";
+        String dateInString =new SimpleDateFormat(pattern).format(new Date());
+		System.out.println("Today date is == "+dateInString);
 		double cal=2060;
 		System.out.println(cal/1000);
 	}

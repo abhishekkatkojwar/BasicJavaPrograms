@@ -16,7 +16,7 @@ public class ReadCountPrintRepeatedWordOccurencesInString {
     public static void main(String[] args) {
  
         // sample test string
-        String testStr = "Science blank Maths blank blank Physics blank Maths Physics Physics";
+        String testStr = "Science blank Maths blank blank Physics Blank Maths Physics Physics";
  
         // invoke to count & print for supplied file
         countAndPrintRepeatedWordOccurences(testStr);
@@ -39,7 +39,7 @@ public class ReadCountPrintRepeatedWordOccurencesInString {
  
             // Step 4: convert all String into lower case, before comparison
             String tempUCword = word.toLowerCase();
- 
+            
             // Step 5: check whether Map contains particular word, already 
             if(mapOfRepeatedWord.containsKey(tempUCword)){
  

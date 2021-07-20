@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="AccessModifire.Simple">
+      <class name="testNG.DependencyTestUsingAnnotation">
         <methods>
-          <include name="assertVal"/>
+          <include name="testSalutationMessage"/>
+          <include name="initEnvironmentTest"/>
         </methods>
-      </class> <!-- AccessModifire.Simple -->
+      </class> <!-- testNG.DependencyTestUsingAnnotation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
