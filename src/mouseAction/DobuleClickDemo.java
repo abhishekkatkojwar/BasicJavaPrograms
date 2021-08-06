@@ -1,6 +1,7 @@
 package mouseAction;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,8 +29,14 @@ public class DobuleClickDemo {
 		// =driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
 		WebElement text = driver
 				.findElement(By
-						.xpath("//*[@id='rso']/div[1]/div[1]/div/div[2]/span/span/em[4]"));
+						.xpath("//*[@id='tsf']/div[1]/div[1]/div[2]/div/div[2]/input"));
 		action.doubleClick(text).perform();
+		System.out.println("done");
+		action.keyDown(Keys.SHIFT)
+	    .sendKeys("s")
+	    .build()
+	    .perform();
+		System.out.println("don1111");
 		// Switch to the alert box and click on OK button
 		// Alert alert = driver.switchTo().alert();
 		// System.out.println("Alert Text\n" +alert.getText());
