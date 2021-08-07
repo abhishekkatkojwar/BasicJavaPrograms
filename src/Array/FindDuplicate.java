@@ -2,6 +2,7 @@ package Array;
 
 //Java code to find
 //duplicates in O(n) time
+//Testing
 
 class FindDuplicate {
 	// Function to print duplicates
