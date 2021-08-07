@@ -43,20 +43,29 @@ public class testRuff {
 //					+ " times");
 //		}
 		
-		String st="abhishek123katkojwar456";
-		char [] ch=st.toCharArray();
-		String charectrs = "";
-		String alphabates = "";
-		for (int i=0; i<ch.length; i++){
-			for(char ch1='a'; ch1<='z'; ch1++){
-				if(ch[i]==ch1){
-				charectrs+=ch[i];
-				}
-			}
-			
-		}
-		System.out.println(charectrs);
-		System.out.println(alphabates);
+		String st="345abhishek123$#@!";
+		String number = "";
+	    String letter = "";
+	    String symbol = "";
+
+	    for (int i = 0; i < st.length(); i++) 
+	    {
+	        char a = st.charAt(i);
+	        if (Character.isDigit(a)) 
+	        {
+	            number = number + a;
+	            continue;
+	        } 
+	        if(Character.isLetter(a))
+	        {
+	            letter = letter + a;
+	        }
+	        else
+	        {
+	            symbol = symbol + a;
+	        }
+	    }
+	    System.out.println(number+" "+letter+" "+symbol);
 	}
 
 }
